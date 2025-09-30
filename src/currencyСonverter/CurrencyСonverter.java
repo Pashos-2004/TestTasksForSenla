@@ -5,20 +5,21 @@ import java.util.Scanner;
 
 public class CurrencyСonverter {
 	
-
+	public static final Currency[] currencies = {
+			new Currency("RUB", "Российский рубль", 1.0),
+			new Currency("USD", "Доллар США", 83.6118),
+			new Currency("EUR", "Евро", 97.6823),
+			new Currency("CNY", "Юань", 11.6751),
+			new Currency("KZT", "Тенге", 0.154356)
+	};
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int currencyIndex1 = 1;
 		int currencyIndex2 = -2;
 		double amountOfCurrency = 0.0;
 		String temp  = "";
-		Currency[] currencies = {
-				new Currency("RUB", "Российский рубль", 1.0),
-				new Currency("USD", "Доллар США", 83.6118),
-				new Currency("EUR", "Евро", 97.6823),
-				new Currency("CNY", "Юань", 11.6751),
-				new Currency("KZT", "Тенге", 0.154356)
-		};
+		
 		
 		while(currencyIndex1!=-1) {
 			try {

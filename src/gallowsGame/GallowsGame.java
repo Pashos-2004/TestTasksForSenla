@@ -43,6 +43,7 @@ public class GallowsGame {
 		while(!isWordGuessed && lifes>0) {
 			isNewLetterOpened = false;
 			printGallows(lifes);
+			System.out.print("\nОсталось жизней : "+lifes);
 			System.out.print("\n\nЗагаданное слово: ");
 			for(int i = 0; i < isLetterGuessed.length; i++) 
 				if(isLetterGuessed[i]) System.out.print(word.charAt(i)+" "); 
