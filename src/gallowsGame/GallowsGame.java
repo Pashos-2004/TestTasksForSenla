@@ -52,7 +52,6 @@ public class GallowsGame {
 			letter = input.nextLine();
 			
 			if(letter.length()>1 || letter.equals("")) continue;
-			if((int) letter.charAt(0) >= (int)'А' && (int) letter.charAt(0) <= (int)'А'+33) letter = ""+ (char)((int) letter.charAt(0) - ((int) 'А' - (int) 'а') );
 			if((int) letter.charAt(0) < (int)'а' || (int) letter.charAt(0) > (int)'а'+33) continue;
 			if(usedLetters.contains(letter.charAt(0))) continue;
 			else usedLetters.add(letter.charAt(0)); 
